@@ -1,0 +1,203 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Importing the "Poppins" font from Google Fonts using the @import rule. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* Setting global styles for all elements:
+   - Resetting margin and padding to 0.
+   - Using the border-box model for box sizing.
+   - Setting the default font to 'Poppins' or a sans-serif font. */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background: #E3F2FD;
+}
+/* Styling for the body element:
+   - Creating a flex container with items centered both horizontally and vertically.
+   - Setting a minimum height of the viewport height.
+   - Adding padding and setting the background color. */
+
+.wrapper {
+  height: 270px;
+  width: 420px;
+  border-radius: 7px;
+  background: #0B85FF;
+  padding: 30px 30px 35px;
+  transition: height 0.2s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+/* Styling for a container with the class "wrapper":
+   - Setting fixed height, width, and rounded corners.
+   - Adding background color and padding.
+   - Applying a transition for smooth height changes.
+   - Adding a box shadow for an elevation effect. */
+
+.wrapper.active {
+  height: 525px;
+}
+/* Additional styling for the "wrapper" when it has the "active" class:
+   - Increases the height for an expanded appearance. */
+
+.wrapper form {
+  height: 210px;
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  border-radius: 7px;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.2s ease;
+}
+/* Styling for the form element within the "wrapper":
+   - Setting height and flex display for centering content.
+   - Adding cursor styles and disabling text selection.
+   - Centering text horizontally.
+   - Providing a background color. */
+
+.wrapper.active form {
+  height: 225px;
+  pointer-events: none;
+}
+/* Additional styling for the form within the "wrapper" when it has the "active" class:
+   - Increases the height and disables pointer events. */
+
+form img {
+  display: none;
+  max-width: 148px;
+}
+/* Styling for images within the form:
+   - Initially hiding the image with "display: none."
+   - Setting a maximum width for the image. */
+
+.wrapper.active form img {
+  display: block;
+}
+/* Additional styling for the image within the form when the "wrapper" has the "active" class:
+   - Displays the image. */
+
+.wrapper.active form .content {
+  display: none;
+}
+/* Additional styling for the content within the form when the "wrapper" is active:
+   - Hides the content. */
+
+form .content i {
+  color: #0B85FF;
+  font-size: 55px;
+}
+/* Styling for icons within the content:
+   - Setting the color and font size. */
+
+form .content p {
+  color: #0B85FF;
+  margin-top: 15px;
+  font-size: 16px;
+}
+/* Styling for paragraphs within the content:
+   - Setting the color, top margin, and font size. */
+
+.wrapper .details {
+  opacity: 0;
+  margin-top: 25px;
+  pointer-events: none;
+}
+/* Styling for the "details" section within the "wrapper":
+   - Initially setting opacity to 0 (hidden) and adding top margin.
+   - Disabling pointer events. */
+
+.wrapper.active .details {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+/* Additional styling for the "details" section when the "wrapper" is active:
+   - Shows the details with animation.
+   - Enables pointer events. */
+
+.details textarea {
+  width: 100%;
+  height: 128px;
+  outline: none;
+  resize: none;
+  color: #fff;
+  font-size: 18px;
+  background: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+}
+/* Styling for textareas within the "details" section:
+   - Setting width, height, and styles to customize appearance.
+   - Disabling the outline and resize feature.
+   - Setting text color, font size, and background.
+   - Adding border styles. */
+
+textarea::-webkit-scrollbar {
+  width: 0px;
+}
+textarea:hover::-webkit-scrollbar {
+  width: 5px;
+}
+textarea:hover::-webkit-scrollbar-track {
+  background: none;
+}
+textarea:hover::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+}
+/* Styling for scrollbars within the textarea:
+   - Adjusting the scrollbar width and appearance. */
+
+.details .buttons {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space between;
+}
+/* Styling for the button container within the "details" section:
+   - Creating a flex container with space between elements. */
+
+.buttons button {
+  height: 55px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  color: #0B85FF;
+  border-radius: 5px;
+  background: #fff;
+  transition: transform 0.3s ease;
+  width: calc(100% / 2 - 10px);
+}
+/* Styling for buttons within the button container:
+   - Setting button styles, including size, outline, border, font, cursor, color, border-radius, background, and transitions. */
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+/* Styling for the active state of buttons:
+   - Applying a scale transform for a pressed effect. */
+
+@media (max-width: 450px) {
+  .wrapper {
+    padding: 25px;
+    height: 260px;
+  }
+  .wrapper.active {
+    height: 520px;
+  }
+}
+/* Media query for screens with a maximum width of 450px:
+   - Adjusting the padding and height of the "wrapper" and its active state. */

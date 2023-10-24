@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- This declaration specifies the document type for HTML5. -->
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<!-- These are comments that provide information about the code. They do not affect the rendering of the page. -->
+
+<html lang="en" dir="ltr">
+<!-- The opening tag for the HTML document. "lang" specifies the language (English) and "dir" 
+  specifies the text direction (left-to-right). -->
+
+  <head>
+  <!-- The head section of the HTML document, which contains metadata and links to external resources. -->
+    <meta charset="utf-8">
+    <!-- Meta tag specifying the character encoding of the document (UTF-8, which is common for web pages). -->
+
+    <title>QR Code Reader | CodingNepal</title>
+    <!-- Title of the web page, which is displayed in the browser's title bar or tab. -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to an external stylesheet (CSS) file for styling the page. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag for specifying the viewport settings, which affects how the page is displayed on different devices (responsive design). -->
+    <!-- Font Awesome CDN Link for Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Link to the Font Awesome library for using icons in the page. -->
+
+  </head>
+
+  <body>
+  <!-- The body of the HTML document, where the visible content is placed. -->
+
+    <div class="wrapper">
+    <!-- A div element with the class "wrapper" that serves as a container for the page content. -->
+
+      <form action="#">
+      <!-- A form element with an "action" attribute set to "#" (a placeholder URL). -->
+
+        <input type="file" hidden>
+        <!-- An input element of type "file" that allows users to select files from their device. 
+          The "hidden" attribute hides it from view. -->
+
+        <img src="#" alt="qr-code">
+        <!-- An image (img) element with a placeholder source URL "#" and alternative text "qr-code". -->
+
+        <div class="content">
+        <!-- A div element with the class "content" that contains information about uploading a QR code. -->
+
+          <i class="fas fa-cloud-upload"></i>
+          <!-- An "i" element (icon) from Font Awesome with the class "fas fa-cloud-upload" 
+            to display a cloud upload icon. -->
+
+          <p>Upload QR Code to Read</p>
+          <!-- A paragraph element with a description of the page's purpose. -->
+
+        </div>
+
+      </form>
+      <div class="details">
+      <!-- A div element with the class "details" that will display details of the QR code. -->
+
+        <textarea spellcheck="false" disabled></textarea>
+        <!-- A textarea element for displaying text content. The "spellcheck" attribute is set to 
+          "false" to disable spell checking, and the "disabled" attribute disables user input. -->
+
+        <div class="buttons">
+        <!-- A div element with the class "buttons" that contains action buttons. -->
+
+          <button class="close">Close</button>
+          <!-- A button element with the class "close" to close the details. -->
+
+          <button class="copy">Copy Text</button>
+          <!-- A button element with the class "copy" to copy the text. -->
+
+        </div>
+
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- A script element that includes an external JavaScript file ("script.js") for adding interactivity to the page. -->
+  </body>
+</html>
