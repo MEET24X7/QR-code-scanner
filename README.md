@@ -1,6 +1,9 @@
 # QR-code-scanner
 Created a QR Code Scanner in HTML CSS &amp; JavaScript. In this web app, users can upload any QR code image and decode/extract the content from it. 
 
+# REST api:
+https://goqr.me/api/doc/read-qr-code/
+
 # USE CASES OF this project in different types of apps:
 
 - Scan QR Codes for Login : sers can scan QR codes to quickly log in to websites or apps.
